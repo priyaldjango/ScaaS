@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head onload="javascript:myFunction()">
+    <title>  Variables </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    #myDIV {
+        width: 100%;
+        padding: 300px 0;
+        text-align: center;
+        background-color: lightblue;
+        margin-top: 20px;
+    }
+    </style>
+</head>
+<body onload="javascript:start()">
+
+    <h2> {{ msg }} </h2>
+    <h2> See the Variable load in your netCDN file by clicking load variable buttom </h2>
+    <form action="/index/{{ fname }},{{ msg}}"  method="post">
+
+        <!--Variable Name: <input type="text" name="lname"><br>-->
+        <button type="submit" formmethod="post">Load Variable</button>
+        <input type="button" value="Back" onclick="window.history.back()" />
+        <!--<button type="submit" formmethod="post">Load Vars</button>-->
+    </form>
+
+    <div id="myDIV">
+        <!--<table id='table' border=1" align="center" align="top" width="800">-->
+          <!--<tr>-->
+            <!--<th>Company</th>-->
+            <!--<th>Contact</th>-->
+            <!--<th>Country</th>-->
+          <!--</tr>-->
+        <!--</table>-->
+    </div>
+
+</body>
+</html>
